@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="theme-color" content="#0a0c10">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>True View Lighting | Permanent Lighting in Northwest Arkansas</title>
+<meta name="description" content="True View Lighting installs custom permanent outdoor lighting for homes in Northwest Arkansas, including Bentonville, Rogers, Fayetteville, Springdale and Bella Vista. Get a free design quote.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"True View Lighting","description":"Custom permanent outdoor lighting design and installation for homes in Northwest Arkansas.","areaServed":["Bentonville","Rogers","Fayetteville","Springdale","Bella Vista","Centerton","Lowell","Siloam Springs","Northwest Arkansas"],"serviceType":"Permanent outdoor lighting installation"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=Inter:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0c10;
+  --bg2:#0f1217;
+  --card:#141820;
+  --line:#242a34;
+  --silver:#c9ced6;
+  --silver-deep:#9ba3b0;
+  --steel:#a9b0bc;
+  --ink:#f3f4f6;
+  --on-silver:#1b1f27;
+  --display:'Jost',system-ui,sans-serif;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;color-scheme:dark}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+.eyebrow{font-family:var(--display);font-size:.74rem;letter-spacing:.34em;text-transform:uppercase;color:var(--silver-deep);margin-bottom:22px}
+h2{font-family:var(--display);font-weight:300;font-size:clamp(2.2rem,4.6vw,4rem);line-height:1.08;letter-spacing:-.01em}
+h2 em,h1 em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 32px;border-radius:2px;font-family:var(--display);font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;border:1px solid transparent;transition:.3s}
+.btn-solid{background:var(--ink);color:var(--on-silver)}
+.btn-solid:hover{background:var(--silver);transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(243,244,246,.45);color:var(--ink);background:rgba(10,12,16,.25);backdrop-filter:blur(6px)}
+.btn-ghost:hover{background:var(--ink);color:var(--on-silver)}
+.btn{position:relative;overflow:hidden;z-index:0}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 50% 40%,rgba(255,255,255,.9),transparent 70%);opacity:0;transition:opacity .45s}
+.btn:hover::before{opacity:.4;animation:btnFlicker .5s ease}
+@keyframes btnFlicker{0%{opacity:0}18%{opacity:.65}32%{opacity:.1}48%{opacity:.55}100%{opacity:.4}}
+
+.progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--silver-deep),var(--ink),var(--silver));z-index:200;box-shadow:0 0 10px rgba(201,206,214,.5)}
+section{position:relative}
+
+/* top bar */
+.top{position:fixed;inset:0 0 auto 0;z-index:60;display:flex;justify-content:space-between;align-items:center;padding:16px 32px;transition:.4s}
+.top.solid{background:rgba(10,12,16,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top .logo img{height:54px;width:auto;filter:drop-shadow(0 0 10px rgba(201,206,214,.22))}
+.top-right{display:flex;align-items:center;gap:22px}
+.top-right .tel{font-family:var(--display);letter-spacing:.14em;font-size:.86rem;color:var(--silver)}
+.top .btn{padding:12px 24px;font-size:.72rem}
+.menu-btn{display:flex;align-items:center;gap:12px;background:none;border:0;font-family:var(--display);font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;padding:8px 0}
+.menu-btn i{display:block;width:26px;height:10px;border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink)}
+
+/* full screen menu */
+.overlay{position:fixed;inset:0;z-index:100;background:rgba(8,10,13,.97);backdrop-filter:blur(20px);display:flex;flex-direction:column;justify-content:center;padding:0 8vw;opacity:0;visibility:hidden;transition:.45s}
+.overlay.open{opacity:1;visibility:visible}
+.overlay .close{position:absolute;top:26px;right:32px;background:none;border:0;font-family:var(--display);letter-spacing:.28em;text-transform:uppercase;font-size:.78rem}
+.overlay ol{list-style:none;counter-reset:m}
+.overlay li{border-bottom:1px solid var(--line);overflow:hidden}
+.overlay li a{display:flex;align-items:baseline;gap:24px;padding:14px 0;font-family:var(--display);font-weight:300;font-size:clamp(1.8rem,4.6vw,3.6rem);transition:.3s;transform:translateY(30px);opacity:0}
+.overlay.open li a{transform:none;opacity:1}
+.overlay li:nth-child(2) a{transition-delay:.05s}.overlay li:nth-child(3) a{transition-delay:.1s}.overlay li:nth-child(4) a{transition-delay:.15s}.overlay li:nth-child(5) a{transition-delay:.2s}.overlay li:nth-child(6) a{transition-delay:.25s}.overlay li:nth-child(7) a{transition-delay:.3s}
+.overlay li a::before{counter-increment:m;content:"0" counter(m);font-size:.8rem;letter-spacing:.2em;color:var(--silver-deep)}
+.overlay li a:hover{padding-left:20px;color:var(--silver)}
+
+/* side rail */
+.rail{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:55;display:flex;flex-direction:column;gap:16px}
+.rail a{width:9px;height:9px;border-radius:50%;border:1px solid var(--silver-deep);position:relative;transition:.3s}
+.rail a.on{background:var(--silver);border-color:var(--silver);transform:scale(1.4)}
+.rail a span{position:absolute;right:22px;top:50%;transform:translateY(-50%);white-space:nowrap;font-family:var(--display);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;background:var(--card);padding:6px 12px;border-radius:2px;opacity:0;pointer-events:none;transition:.3s}
+.rail a:hover span{opacity:1}
+
+/* hero */
+.hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;padding:140px 0 0}
+.slides{position:absolute;inset:0;z-index:0}
+.slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity 1.4s ease,transform 7s ease}
+.slides img.on{opacity:1;transform:scale(1)}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,12,16,.88) 0%,rgba(10,12,16,.55) 45%,rgba(10,12,16,.1) 100%),linear-gradient(0deg,rgba(10,12,16,.95) 0%,transparent 40%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(200deg,rgba(244,167,89,.32) 0%,rgba(40,32,58,.18) 45%,transparent 75%);opacity:var(--duskP,1);transition:opacity .15s linear}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero h1{font-family:var(--display);font-weight:300;font-size:clamp(3rem,8vw,7.4rem);line-height:.98;letter-spacing:-.02em;margin-bottom:26px}
+.hero .lead{max-width:540px;color:#d3d7de;font-weight:300;font-size:1.06rem;margin-bottom:34px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:60px}
+.picker{display:flex;align-items:center;flex-wrap:wrap;gap:18px 26px;padding:22px 0;border-top:1px solid rgba(243,244,246,.2)}
+.picker .lbl{font-family:var(--display);font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--silver-deep)}
+.scenes{display:flex;flex-wrap:wrap;gap:10px}
+.scene{background:rgba(10,12,16,.4);border:1px solid rgba(243,244,246,.25);border-radius:999px;padding:9px 20px 9px 10px;display:flex;align-items:center;gap:10px;font-size:.82rem;transition:.3s;backdrop-filter:blur(6px)}
+.scene img{width:28px;height:28px;border-radius:50%;object-fit:cover}
+.scene:hover{border-color:var(--silver)}
+.scene.on{background:var(--ink);color:var(--on-silver);border-color:var(--ink)}
+.facts{position:relative;z-index:2;background:rgba(10,12,16,.75);border-top:1px solid rgba(243,244,246,.15);backdrop-filter:blur(10px)}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.fact{padding:22px 0;display:flex;align-items:baseline;gap:14px}
+.fact b{font-family:var(--display);font-weight:300;font-size:2rem}
+.fact span{font-size:.8rem;color:var(--silver-deep);letter-spacing:.08em}
+
+/* how it works: rows */
+.how{padding:130px 0 110px;background:var(--bg)}
+.how .head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:70px}
+.how .head p{color:var(--steel);font-weight:300;max-width:440px;justify-self:end}
+.row{display:grid;grid-template-columns:120px 1fr 1.2fr;gap:30px;align-items:baseline;padding:38px 0;border-top:1px solid var(--line);transition:.4s}
+.row:last-child{border-bottom:1px solid var(--line)}
+.row .no{font-family:var(--serif);font-style:italic;font-size:3.6rem;line-height:1;color:var(--silver-deep);transition:.4s}
+.row h3{font-family:var(--display);font-weight:300;font-size:2rem}
+.row p{color:var(--steel);font-weight:300;max-width:520px}
+.row:hover{padding-left:16px;background:linear-gradient(90deg,rgba(201,206,214,.06),transparent)}
+.row:hover .no{color:var(--silver)}
+
+.proof{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-bottom:64px}
+.proof-col h4{font-family:var(--display);font-weight:400;font-size:1.1rem;letter-spacing:.06em;margin-bottom:16px}
+.proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.proof-grid img{width:100%;height:150px;object-fit:cover;border-radius:2px;transition:transform .5s;background:var(--card)}
+.proof-grid img:first-child{grid-column:1/-1;height:190px}
+.proof-grid img:hover{transform:scale(1.03)}
+.proof-note{color:var(--silver-deep);font-size:.8rem;margin-top:14px;font-weight:300;max-width:420px}
+@media(max-width:900px){.proof{grid-template-columns:1fr;gap:40px;margin-bottom:44px}}
+
+/* app */
+.app{padding:120px 0;background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.app .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center}
+.app h2{margin-bottom:22px}
+.app .intro{color:var(--steel);font-weight:300;margin-bottom:36px;max-width:520px}
+.tabs{display:grid;gap:0;margin-bottom:34px}
+.tab{background:none;border:0;border-top:1px solid var(--line);text-align:left;padding:20px 0;display:grid;grid-template-columns:1fr auto;gap:4px 20px;align-items:center;transition:.3s}
+.tab:last-child{border-bottom:1px solid var(--line)}
+.tab strong{font-family:var(--display);font-weight:400;font-size:1.3rem;color:var(--steel);transition:.3s}
+.tab::after{content:"+";font-size:1.4rem;color:var(--silver-deep);transition:.3s;grid-row:1;grid-column:2}
+.tab p{grid-column:1/-1;max-height:0;overflow:hidden;color:var(--steel);font-size:.9rem;font-weight:300;transition:max-height .5s,margin .5s}
+.tab.on strong{color:var(--ink)}
+.tab.on::after{transform:rotate(45deg);color:var(--ink)}
+.tab.on p{max-height:120px;margin-top:6px}
+.note{font-size:.85rem;color:var(--silver-deep);border-left:1px solid var(--silver-deep);padding-left:18px;max-width:520px}
+.phone-wrap{display:flex;flex-direction:column;align-items:center;gap:16px}
+.phone{width:300px;border-radius:44px;padding:12px;background:linear-gradient(160deg,#3a414d,#12151b);box-shadow:0 40px 80px -30px #000,0 0 0 1px #4a5260 inset;position:relative}
+.phone::before{content:"";position:absolute;top:22px;left:50%;transform:translateX(-50%);width:80px;height:20px;border-radius:12px;background:#000;z-index:2}
+.screen{border-radius:34px;background:#0b0e13;min-height:560px;padding:64px 22px 28px;display:flex;flex-direction:column;gap:20px;overflow:hidden}
+.screen h4{font-family:var(--display);font-weight:400;letter-spacing:.2em;text-transform:uppercase;font-size:.72rem;color:var(--silver-deep)}
+.screen .big{font-family:var(--display);font-weight:300;font-size:1.7rem}
+.pw{width:96px;height:52px;border-radius:30px;background:linear-gradient(90deg,#c9ced6,#f4f5f8);position:relative;margin:6px 0}
+.pw::after{content:"";position:absolute;right:5px;top:5px;width:42px;height:42px;border-radius:50%;background:#12151b}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:6px;background:linear-gradient(90deg,#c9ced6 70%,#252b35 70%);outline:none;padding:0;border:0}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:#f4f5f8;box-shadow:0 0 12px rgba(244,245,248,.6)}
+.sw{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.wheel{width:180px;height:180px;border-radius:50%;margin:6px auto 18px;position:relative;background:conic-gradient(from 90deg,#ff3b3b,#ffdf3b,#3bff57,#3bd7ff,#3b5bff,#c93bff,#ff3b3b);box-shadow:0 0 0 6px #12151b,0 0 30px rgba(0,0,0,.5) inset}
+.wheel-dial{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.95) 0%,rgba(255,255,255,.55) 18%,transparent 62%);pointer-events:none}
+.wheel-pick{position:absolute;width:22px;height:22px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.4),0 2px 8px rgba(0,0,0,.5);transform:translate(-50%,-50%);background:#5b8cff}
+.wheel-preview{display:flex;align-items:center;gap:14px;margin-bottom:4px}
+.wheel-preview .swatch{width:40px;height:40px;border-radius:12px;border:1px solid rgba(255,255,255,.15);flex:none}
+.wheel-preview small{color:var(--silver-deep);font-size:.72rem;letter-spacing:.06em}
+.sw div{border-radius:16px;padding:44px 12px 12px;font-size:.78rem;border:1px solid #232a34}
+.srow{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid #1e232c;font-size:.9rem}
+.srow small{color:var(--silver-deep);display:block;font-size:.72rem}
+.tg{width:42px;height:24px;border-radius:14px;background:#c9ced6;position:relative;flex:none}
+.tg::after{content:"";position:absolute;right:3px;top:3px;width:18px;height:18px;border-radius:50%;background:#12151b}
+.tg.off{background:#2a303b}.tg.off::after{right:auto;left:3px;background:#69707d}
+.cap{font-size:.72rem;color:var(--silver-deep);letter-spacing:.06em}
+
+/* gallery */
+.work{padding:120px 0 100px;background:var(--bg)}
+.work .head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:46px}
+.work .head{margin-bottom:40px}
+.work-count{font-family:var(--display);font-size:.78rem;letter-spacing:.14em;color:var(--silver-deep)}
+.track{column-count:3;column-gap:14px}
+.track figure{break-inside:avoid;margin:0 0 14px;overflow:hidden;background:var(--card);border-radius:2px;cursor:zoom-in;position:relative}
+.track img{width:100%;display:block;transition:transform .6s}
+.track figure:hover img{transform:scale(1.05)}
+@media(min-width:1500px){.track{column-count:4}}
+@media(max-width:700px){.track{column-count:2;column-gap:10px}.track figure{margin-bottom:10px}}
+
+/* lightbox */
+.lightbox{position:fixed;inset:0;z-index:150;background:rgba(5,6,8,.96);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:.3s}
+.lightbox.open{opacity:1;visibility:visible}
+.lightbox img{max-width:88vw;max-height:82vh;object-fit:contain;box-shadow:0 40px 100px -30px #000;border-radius:2px}
+.lb-close{position:absolute;top:26px;right:32px;background:none;border:0;color:var(--ink);font-size:1.3rem;font-family:var(--display)}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:54px;height:54px;border-radius:50%;border:1px solid var(--silver-deep);background:rgba(10,12,16,.5);font-size:1.2rem;color:var(--ink);transition:.3s}
+.lb-nav:hover{background:var(--ink);color:var(--on-silver)}
+.lb-prev{left:20px}.lb-next{right:20px}
+.lb-count{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-family:var(--display);font-size:.75rem;letter-spacing:.2em;color:var(--silver-deep)}
+@media(max-width:600px){.lb-nav{width:44px;height:44px}.lb-prev{left:8px}.lb-next{right:8px}}
+
+.work .cap-note{color:var(--steel);font-weight:300;margin-top:14px;max-width:520px}
+/* founding band */
+.band{padding:110px 0;text-align:center;background:linear-gradient(180deg,var(--bg),var(--bg2));border-top:1px solid var(--line)}
+.band blockquote{font-family:var(--serif);font-style:italic;font-size:clamp(1.8rem,3.6vw,3rem);line-height:1.28;max-width:900px;margin:0 auto 26px}
+.band p{color:var(--steel);font-weight:300;max-width:640px;margin:0 auto 32px}
+.band .eyebrow{margin-bottom:26px}
+.band cite{font-style:normal;font-family:var(--display);font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--silver-deep)}
+
+/* packages: rows */
+.packages{padding:120px 0;background:var(--bg2);border-top:1px solid var(--line)}
+.packages .head{max-width:640px;margin-bottom:56px}
+.packages .head p{color:var(--steel);font-weight:300;margin-top:16px}
+.pk{display:grid;grid-template-columns:1fr 1.5fr auto;gap:40px;align-items:center;padding:40px 30px;border-top:1px solid var(--line);transition:.4s;position:relative}
+.pk:last-child{border-bottom:1px solid var(--line)}
+.pk:hover{background:rgba(201,206,214,.05)}
+.pk h3{font-family:var(--display);font-weight:300;font-size:2.3rem;line-height:1.1}
+.pk small{display:block;font-size:.8rem;letter-spacing:.12em;color:var(--silver-deep);margin-top:4px}
+.pk ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:.88rem;color:var(--steel)}
+.pk li::before{content:"—";margin-right:10px;color:var(--silver-deep)}
+.pk.feat{background:linear-gradient(90deg,rgba(201,206,214,.1),transparent);border-left:2px solid var(--silver)}
+.pk.feat h3::after{content:"Most popular";font-family:var(--display);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;margin-left:14px;padding:5px 10px;background:var(--ink);color:var(--on-silver);vertical-align:middle}
+
+/* faq */
+.faq{padding:120px 0;background:var(--bg);border-top:1px solid var(--line)}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.4fr;gap:80px;align-items:start}
+.faq .side{position:sticky;top:120px}
+.faq .side p{color:var(--steel);font-weight:300;margin:18px 0 26px}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:24px 0;font-family:var(--display);font-weight:300;font-size:1.35rem;display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--silver-deep);font-size:1.5rem;line-height:1;transition:.3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 26px;color:var(--steel);font-weight:300;max-width:620px}
+
+/* contact / area */
+.contact{padding:120px 0;background:linear-gradient(180deg,var(--bg2),#12161d);border-top:1px solid var(--line)}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.contact h2{margin-bottom:24px}
+.contact p{color:var(--steel);font-weight:300;margin-bottom:16px;max-width:520px}
+.cities{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0}
+.cities span{padding:8px 18px;border:1px solid var(--line);font-size:.78rem;letter-spacing:.1em;color:var(--silver)}
+.checks{list-style:none;color:var(--steel);font-size:.92rem}
+.checks li{padding:4px 0}
+.checks li::before{content:"✓";margin-right:12px;color:var(--silver)}
+form{background:var(--card);border:1px solid var(--line);padding:42px;display:grid;gap:18px}
+form h3{font-family:var(--display);font-weight:300;font-size:1.9rem}
+form .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{font-family:var(--display);font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--silver-deep);display:grid;gap:8px}
+input,select{font:inherit;font-family:var(--sans);font-size:.95rem;letter-spacing:0;text-transform:none;padding:14px 0;border:0;border-bottom:1px solid #3a414d;background:transparent;color:var(--ink);width:100%;transition:.3s;border-radius:0}
+input:focus,select:focus{outline:none;border-color:var(--silver)}
+select option{background:#141820;color:#f3f4f6}
+form .btn{width:100%;margin-top:8px}
+.fine{font-size:.74rem;color:var(--silver-deep);text-align:center}
+
+footer{padding:70px 0 34px;background:var(--bg);border-top:1px solid var(--line)}
+.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:30px;margin-bottom:36px}
+.foot img{height:80px;width:auto;filter:drop-shadow(0 0 10px rgba(201,206,214,.22))}
+.foot ul{list-style:none;display:flex;flex-wrap:wrap;gap:26px;font-family:var(--display);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--steel)}
+.foot a:hover{color:var(--ink)}
+.copy{font-size:.75rem;color:var(--silver-deep)}
+
+/* mobile cta */
+.mcta{display:none}
+
+@media(max-width:1100px){.rail{display:none}}
+@media(max-width:900px){
+  .top{padding:12px 20px}.top .tel,.top .btn{display:none}
+  .top .logo img{height:46px}
+  .wrap{padding:0 22px}
+  .hero{padding-top:110px}
+  .hero-actions{margin-bottom:36px}
+  .facts .wrap{grid-template-columns:1fr;padding:0 22px}
+  .fact{padding:10px 0}
+  .how,.app,.work,.packages,.faq,.contact{padding:80px 0}
+  .how .head{grid-template-columns:1fr;gap:20px;margin-bottom:40px}.how .head p{justify-self:start}
+  .row{grid-template-columns:70px 1fr;gap:6px 16px}.row p{grid-column:2}.row .no{font-size:2.6rem}.row h3{font-size:1.6rem}
+  .app .wrap,.faq .wrap,.contact .wrap{grid-template-columns:1fr;gap:50px}
+  .faq .side{position:static}
+  .pk{grid-template-columns:1fr;gap:20px;padding:32px 10px}.pk ul{grid-template-columns:1fr}
+  .work .head{flex-direction:column;align-items:flex-start}
+  form{padding:28px}form .row2{grid-template-columns:1fr}
+  .mcta{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:70;background:rgba(10,12,16,.96);border-top:1px solid var(--line)}
+  .mcta a{padding:16px;text-align:center;font-family:var(--display);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase}
+  .mcta a:last-child{background:var(--ink);color:var(--on-silver)}
+  footer{padding-bottom:90px}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="top" id="topbar">
+  <a href="#top" class="logo" aria-label="True View Lighting home"><img src="logo.png" alt="True View"></a>
+  <div class="top-right">
+    <a class="tel" href="tel:+12149013709">(214) 901-3709</a>
+    <a class="btn btn-solid" href="#quote">Free Quote</a>
+    <button class="menu-btn" id="openMenu" aria-label="Open menu"><span>Menu</span><i></i></button>
+  </div>
+</header>
+
+<div class="overlay" id="overlay" aria-hidden="true">
+  <button class="close" id="closeMenu">Close ✕</button>
+  <ol>
+    <li><a href="#top">Home</a></li>
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#app">Using your lights</a></li>
+    <li><a href="#work">Gallery</a></li>
+    <li><a href="#packages">Packages</a></li>
+    <li><a href="#faq">Questions</a></li>
+    <li><a href="#quote">Free quote</a></li>
+  </ol>
+</div>
+
+<nav class="rail" aria-label="Sections">
+  <a href="#top" data-s="top"><span>Home</span></a>
+  <a href="#how" data-s="how"><span>How it works</span></a>
+  <a href="#app" data-s="app"><span>Using your lights</span></a>
+  <a href="#work" data-s="work"><span>Gallery</span></a>
+  <a href="#packages" data-s="packages"><span>Packages</span></a>
+  <a href="#faq" data-s="faq"><span>Questions</span></a>
+  <a href="#quote" data-s="quote"><span>Free quote</span></a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="slides" id="slides">
+    <img class="on" src="home.webp" alt="Northwest Arkansas home at dusk with permanent white lighting along the roofline">
+    <img src="gallery-1.webp" alt="Home with warm white permanent lighting" loading="lazy">
+    <img src="gallery-2.jpg" alt="Home with multicolor holiday permanent lighting" loading="lazy">
+    <img src="gallery-3.webp" alt="Home with red, white and blue accent lighting" loading="lazy">
+    <img src="gallery-4.webp" alt="Home with cool white roofline lighting" loading="lazy">
+  </div>
+  <div class="wrap">
+    <div class="eyebrow">Permanent Lighting · Northwest Arkansas</div>
+    <h1>True View <em>Lighting</em></h1>
+    <p class="lead">Custom permanent outdoor lighting for Northwest Arkansas homes. We design and install roofline and accent lighting for homes in Bentonville, Rogers, Fayetteville, Springdale and beyond. One color or any color, for every holiday and every evening, controlled from your phone.</p>
+    <div class="hero-actions">
+      <a class="btn btn-solid" href="#quote">Get my free quote</a>
+      <a class="btn btn-ghost" href="#work">View gallery</a>
+    </div>
+    <div class="picker">
+      <span class="lbl">Pick a look</span>
+      <div class="scenes" id="scenes">
+        <button class="scene on" data-i="0"><img src="home.webp" alt="">Classic White</button>
+        <button class="scene" data-i="1"><img src="gallery-1.webp" alt="">Warm Glow</button>
+        <button class="scene" data-i="2"><img src="gallery-2.jpg" alt="">Holiday</button>
+        <button class="scene" data-i="3"><img src="gallery-3.webp" alt="">Patriotic</button>
+        <button class="scene" data-i="4"><img src="gallery-4.webp" alt="">Cool White</button>
+      </div>
+    </div>
+  </div>
+  <div class="facts">
+    <div class="wrap">
+      <div class="fact"><b>Free</b><span>Custom design &amp; quote</span></div>
+      <div class="fact"><b>Local</b><span>Northwest Arkansas owned</span></div>
+      <div class="fact"><b>Custom</b><span>Fit to your home</span></div>
+      <!-- CONFIRM: 16M+ is the standard 24-bit RGB color range (256x256x256); verify it matches the specific controller/product installed -->
+      <div class="fact"><b><span class="cu" data-count="16">0</span>M+</b><span>Possible color combinations</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="head rv">
+      <div><div class="eyebrow">How it works</div><h2>Four steps to a <em>brilliant</em> home</h2></div>
+      <p>No ladders, no tangled strands, no takedown. From first call to first night, we handle everything.</p>
+    </div>
+
+    <!-- CONFIRM: these are example/stock photos, not True View's own crew or app. Swap for real job photos and real app screenshots as soon as you have them. -->
+    <div class="proof rv">
+      <div class="proof-col">
+        <h4>The installation</h4>
+        <div class="proof-grid">
+          <img src="install-2.jpg" alt="Installer securing a lighting track along a roof eave" loading="lazy">
+          <img src="install-1.jpg" alt="Installer mounting a lighting track under a roofline" loading="lazy">
+          <img src="install-3.webp" alt="Installer clipping a light strip into a track along a soffit" loading="lazy">
+        </div>
+        <p class="proof-note">Example of the install process. Clean, low-profile track mounted along the roofline.</p>
+      </div>
+      <div class="proof-col">
+        <h4>Control from your phone</h4>
+        <div class="proof-grid">
+          <img src="control-3.webp" alt="Phone app showing color and pattern options for permanent lighting" loading="lazy">
+          <img src="control-1.jpg" alt="Hand holding a phone with a color-picker app, house lit red white and blue in the background" loading="lazy">
+          <img src="control-2.webp" alt="Hand holding a phone with a color wheel app, brick house lit blue in the background" loading="lazy">
+        </div>
+        <p class="proof-note">Example of app control. Your actual app screen may look different.</p>
+      </div>
+    </div>
+
+    <div class="row rv"><div class="no" data-count="1">00</div><h3>Consult</h3><p>Tell us about your home. We provide a free, no-pressure quote.</p></div>
+    <div class="row rv"><div class="no" data-count="2">00</div><h3>Design</h3><p>We map every roofline and accent, tailored to your architecture.</p></div>
+    <div class="row rv"><div class="no" data-count="3">00</div><h3>Install</h3><p>We install carefully and cleanly, then walk you through the app before we leave.</p></div>
+    <div class="row rv"><div class="no" data-count="4">00</div><h3>Enjoy</h3><p>Pick your scenes in the app and light up your evenings.</p></div>
+  </div>
+</section>
+
+<!-- APP -->
+<section class="app" id="app">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">After installation</div>
+      <h2>Living with your <em>lights</em></h2>
+      <!-- CONFIRM with True View: exact app name, controller and features match the product you install -->
+      <p class="intro">We set up the controller, connect it to your home Wi-Fi and put the app on your phone, then walk you through it before we leave. After that, everything is one tap.</p>
+      <div class="tabs" id="tabs">
+        <button class="tab on" data-t="dim"><strong>On, off &amp; dim</strong><p>Turn your lights on or off and adjust the brightness with a single tap, from the couch or from anywhere.</p></button>
+        <button class="tab" data-t="scenes"><strong>Colors &amp; scenes</strong><p>Choose from over 16 million color combinations; warm white for everyday, or a preset look for Christmas, the Fourth of July, Halloween or game day. Save your favorites to reuse.</p></button>
+        <button class="tab" data-t="sched"><strong>Schedules</strong><p>Set your lights to come on at sunset and turn off at bedtime, with a different look for weekends or holidays.</p></button>
+        <button class="tab" data-t="zones"><strong>Zones</strong><p>Control different parts of your home separately, like the front roofline, garage and porch.</p></button>
+        <!-- CONFIRM: verify the installed app actually offers a full RGB color wheel, not just presets -->
+        <button class="tab" data-t="rgb"><strong>Custom color</strong><p>Not feeling a preset? Dial in any shade yourself on the color wheel, from all 16 million-plus combinations, and save it as your own scene.</p></button>
+      </div>
+      <p class="note">Built to stay up year-round in rain, snow and heat. If you ever need help or a change, contact us and we'll take care of it.</p>
+    </div>
+    <div class="phone-wrap rv">
+      <div class="phone"><div class="screen" id="screen"></div></div>
+      <div class="cap">Illustrative preview. Your app may look slightly different.</div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="head rv">
+      <div><div class="eyebrow">Gallery</div><h2>Examples of <em>what's possible</em></h2><p class="cap-note">Examples of permanent lighting. Photos of our own installs are coming soon.</p></div>
+      <div class="work-count">25 photos</div>
+    </div>
+    <!-- CONFIRM: stock/example photos, not True View's own jobs. Swap in real installs as they're completed. -->
+    <div class="track rv" id="track">
+      <figure><img src="gallery-2.jpg" alt="Home with multicolor holiday permanent lighting" loading="lazy"></figure>
+      <figure><img src="home.webp" alt="Modern farmhouse with white roofline lighting" loading="lazy"></figure>
+      <figure><img src="gallery-1.webp" alt="Craftsman home with warm white soffit lighting" loading="lazy"></figure>
+      <figure><img src="gallery-3.webp" alt="Modern farmhouse with red and white accent lighting" loading="lazy"></figure>
+      <figure><img src="gallery-4.webp" alt="Home with cool white roofline lighting" loading="lazy"></figure>
+      <figure><img src="gallery-5.webp" alt="Warm accent lighting on stone and siding" loading="lazy"></figure>
+      <figure><img src="gallery-6.webp" alt="Modern home with multicolor permanent roofline lighting at dusk" loading="lazy"></figure>
+      <figure><img src="gallery-7.webp" alt="Stone craftsman home with cool white permanent lighting" loading="lazy"></figure>
+      <figure><img src="gallery-8.webp" alt="Home with warm white permanent lighting on gables and porch" loading="lazy"></figure>
+      <figure><img src="gallery-9.webp" alt="Brick home with warm white permanent lighting at sunset" loading="lazy"></figure>
+      <figure><img src="gallery-10.jpg" alt="Modern two-story home with pink and purple permanent roofline lighting" loading="lazy"></figure>
+      <figure><img src="gallery-11.webp" alt="Home with red and green two-tone permanent roofline lighting" loading="lazy"></figure>
+      <figure><img src="gallery-12.jpg" alt="Stone home with blue permanent roofline lighting" loading="lazy"></figure>
+      <figure><img src="gallery-13.jpg" alt="Brick ranch home with warm white permanent lighting" loading="lazy"></figure>
+      <figure><img src="gallery-14.webp" alt="Home with warm white permanent lighting over the garage and porch" loading="lazy"></figure>
+      <figure><img src="gallery-15.webp" alt="Home with warm white and red permanent lighting at dusk with holiday decor" loading="lazy"></figure>
+      <figure><img src="gallery-16.jpg" alt="Brick home with colorful pink, green and blue permanent uplighting and roofline lighting" loading="lazy"></figure>
+      <figure><img src="gallery-17.jpg" alt="Brick home with red, white and blue permanent roofline lighting" loading="lazy"></figure>
+      <figure><img src="gallery-18.webp" alt="Two-story brick home with red, green and white permanent roofline lighting" loading="lazy"></figure>
+      <figure><img src="gallery-19.jpg" alt="Brick ranch home with warm white permanent roofline lighting at dusk" loading="lazy"></figure>
+      <figure><img src="gallery-20.webp" alt="Modern home with red, green and white permanent roofline lighting, close-up detail" loading="lazy"></figure>
+      <figure><img src="gallery-21.jpg" alt="White brick modern farmhouse with cool white permanent roofline lighting" loading="lazy"></figure>
+      <figure><img src="gallery-22.png" alt="Craftsman home with warm white permanent roofline lighting" loading="lazy"></figure>
+      <figure><img src="gallery-23.webp" alt="Craftsman home with warm white permanent roofline lighting, mountain view" loading="lazy"></figure>
+      <figure><img src="gallery-24.jpg" alt="Home with cool white permanent roofline lighting in the snow" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous photo">←</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next photo">→</button>
+  <div class="lb-count" id="lbCount"></div>
+</div>
+
+<!-- FOUNDING CUSTOMERS -->
+<section class="band">
+  <div class="wrap rv">
+    <div class="eyebrow">Founding customers</div>
+    <blockquote>We're new, and we'll earn your trust one home at a time.</blockquote>
+    <!-- CONFIRM: set the real founding-customer offer/pricing before publishing -->
+    <p>We're taking on a limited number of founding-customer installs in Northwest Arkansas. You get our full attention and a special founding rate. When we're done, we ask for an honest review and photos of the finished lighting.</p>
+    <a class="btn btn-solid" href="#quote">Ask about founding pricing</a>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="packages" id="packages">
+  <div class="wrap">
+    <div class="head rv"><div class="eyebrow">Packages</div><h2>Tailored to <em>every residence</em></h2><p>Every project is quoted individually. These are starting points.</p></div>
+    <!-- CONFIRM: package contents and any workmanship guarantee before publishing -->
+    <div class="pk rv">
+      <div><h3>Signature</h3><small>Roofline lighting</small></div>
+      <ul><li>Front-facing roofline</li><li>Full color + white control</li><li>Phone app &amp; scheduling</li><li>Professional installation</li></ul>
+      <a class="btn btn-ghost" href="#quote">Request quote</a>
+    </div>
+    <div class="pk feat rv">
+      <div><h3>Prestige</h3><small>Complete home outline</small></div>
+      <ul><li>Full roofline &amp; gables</li><li>Custom scenes &amp; holiday presets</li><li>Full home design walkthrough</li><li>Professional installation</li></ul>
+      <a class="btn btn-solid" href="#quote">Request quote</a>
+    </div>
+    <div class="pk rv">
+      <div><h3>Estate</h3><small>Whole-property design</small></div>
+      <ul><li>Home, garage &amp; outbuildings</li><li>Custom design for the whole property</li><li>Multiple zones &amp; scenes</li><li>Ongoing support</li></ul>
+      <a class="btn btn-ghost" href="#quote">Request quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="side rv">
+      <div class="eyebrow">Questions</div>
+      <h2>Good to <em>know</em></h2>
+      <p>Can't find your answer? Call or message us and we'll get back to you as soon as we can.</p>
+      <a class="btn btn-ghost" href="#quote">Ask us anything</a>
+    </div>
+    <div class="rv">
+      <details open><summary>Can I change the colors myself?</summary><p>Yes. You can pick colors, scenes and brightness any time from the app on your phone. You never need to call us to change a color.</p></details>
+      <details><summary>Do I have to take the lights down for the seasons?</summary><p>No. They stay up year-round and look like a subtle trim by day. Switch to a holiday look when you want one, and back to warm white after.</p></details>
+      <details><summary>What if my Wi-Fi goes down?</summary><p>Your saved schedules and settings are stored so the lights keep working as planned. You only need Wi-Fi when you want to make changes from the app. <!-- CONFIRM: verify offline behavior of the installed controller --></p></details>
+      <details><summary>Are they safe in rain, snow and heat?</summary><p>They're made to be weatherproof and to stay outside all year. <!-- CONFIRM: rating and warranty terms --></p></details>
+      <details><summary>Will they raise my electric bill?</summary><p>LED lighting uses very little power, so most homeowners barely notice a difference on their bill.</p></details>
+      <details><summary>Can I control more than one area?</summary><p>Yes. Your home can be split into zones, like the front, garage and porch, so each one can be controlled separately.</p></details>
+      <details><summary>Who do I call if something isn't right?</summary><p>Contact us anytime using the form or the phone number above, and we'll get it taken care of.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT + SERVICE AREA -->
+<section class="contact" id="quote">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Free design quote · Northwest Arkansas</div>
+      <h2>Permanent lighting across <em>Northwest Arkansas</em></h2>
+      <p>True View Lighting designs and installs permanent outdoor lighting for homeowners throughout Northwest Arkansas. Our custom roofline lighting replaces seasonal Christmas lights with a clean, year-round look that you control from your phone, for holidays, game days and everyday curb appeal.</p>
+      <p>Whether you own a new build in Bentonville, a family home in Rogers or Springdale, or a hillside home in Fayetteville, we'll design a lighting plan that fits your architecture.</p>
+      <div class="cities"><span>Bentonville</span><span>Rogers</span><span>Fayetteville</span><span>Springdale</span><span>Bella Vista</span><span>Centerton</span><span>Lowell</span><span>Siloam Springs</span></div>
+      <ul class="checks"><li>Free in-home or photo-based estimate</li><li>Free custom design</li><li>Locally owned in Northwest Arkansas</li></ul>
+    </div>
+    <form class="rv" onsubmit="event.preventDefault();this.innerHTML='<h3>Thank you.</h3><p style=&quot;color:#a9b0bc&quot;>We received your request and will be in touch within one business day.</p>'">
+      <h3>Request your free quote</h3>
+      <div class="row2">
+        <label>Name<input required placeholder="Jane Smith"></label>
+        <label>Phone<input required type="tel" placeholder="(555) 000-0000"></label>
+      </div>
+      <label>Email<input required type="email" placeholder="you@email.com"></label>
+      <label>Property address<input placeholder="Street, City, ZIP"></label>
+      <label>Interested in
+        <select><option>Full home outline</option><option>Roofline only</option><option>Whole-property design</option><option>Not sure yet</option></select>
+      </label>
+      <button class="btn btn-solid" type="submit">Request my quote</button>
+      <div class="fine">We respect your privacy. Your details are never shared.</div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a href="#top" aria-label="True View Lighting home"><img src="logo.png" alt="True View"></a>
+      <ul><li><a href="#how">How it works</a></li><li><a href="#work">Gallery</a></li><li><a href="#packages">Packages</a></li><li><a href="#quote">Contact</a></li></ul>
+    </div>
+    <div class="copy">© 2026 True View Lighting · Permanent outdoor lighting in Northwest Arkansas. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="mcta"><a href="tel:+12149013709">Call</a><a href="#quote">Free quote</a></div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+
+// menu
+const ov=$('#overlay');
+const setMenu=o=>{ov.classList.toggle('open',o);ov.setAttribute('aria-hidden',!o);document.body.style.overflow=o?'hidden':''};
+$('#openMenu').onclick=()=>setMenu(true);$('#closeMenu').onclick=()=>setMenu(false);
+$$('#overlay a').forEach(a=>a.onclick=()=>setMenu(false));
+addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
+
+// top bar
+const tb=$('#topbar');addEventListener('scroll',()=>tb.classList.toggle('solid',scrollY>60),{passive:true});
+
+// scroll progress bar
+const prog=$('#progress');
+function updateProgress(){const h=document.documentElement;const max=h.scrollHeight-h.clientHeight;prog.style.width=(max>0?(h.scrollTop/max)*100:0)+'%'}
+addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+
+// dusk-to-night hero, tied to scroll position
+const heroEl=$('.hero');
+function updateHeroDusk(){const hh=heroEl.offsetHeight;const p=Math.min(1,Math.max(0,scrollY/hh));heroEl.style.setProperty('--duskP',1-p)}
+addEventListener('scroll',updateHeroDusk,{passive:true});updateHeroDusk();
+
+// hero scenes
+const slides=$$('#slides img'),btns=$$('.scene');let cur=0,timer;
+function show(i){cur=i;slides.forEach((s,k)=>s.classList.toggle('on',k===i));btns.forEach((b,k)=>b.classList.toggle('on',k===i))}
+function auto(){clearInterval(timer);timer=setInterval(()=>show((cur+1)%slides.length),6000)}
+btns.forEach(b=>b.onclick=()=>{show(+b.dataset.i);auto()});auto();
+
+// app tabs + phone
+const screens={
+dim:`<h4>Front of house</h4><div class="big">Lights on</div><div class="pw"></div><h4>Brightness</h4><input type="range" min="10" max="100" value="70" oninput="this.style.background='linear-gradient(90deg,#c9ced6 '+this.value+'%,#252b35 '+this.value+'%)'">`,
+scenes:`<h4>Choose a look</h4><div class="sw"><div style="background:linear-gradient(135deg,#f6e7c9,#c9a15c);color:#1b1f27">Warm White</div><div style="background:linear-gradient(135deg,#eef3ff,#8fa6d6);color:#1b1f27">Cool White</div><div style="background:linear-gradient(135deg,#d43a3a,#2ea15a)">Christmas</div><div style="background:linear-gradient(135deg,#d43a3a,#f3f4f6,#2c56b5)">Patriotic</div><div style="background:linear-gradient(135deg,#f08a24,#5b2a86)">Halloween</div><div style="background:linear-gradient(135deg,#3a6fd8,#f0c419)">Game Day</div></div>`,
+sched:`<h4>Schedule</h4><div class="srow"><div>Sunset<small>Every day</small></div><div class="tg"></div></div><div class="srow"><div>Lights off<small>11:00 PM</small></div><div class="tg"></div></div><div class="srow"><div>Party scene<small>Fri &amp; Sat</small></div><div class="tg"></div></div><div class="srow"><div>Holiday look<small>Dec 1 – Jan 2</small></div><div class="tg off"></div></div>`,
+zones:`<h4>Zones</h4><div class="srow"><div>Front roofline<small>Classic White</small></div><div class="tg"></div></div><div class="srow"><div>Garage<small>Classic White</small></div><div class="tg"></div></div><div class="srow"><div>Front porch<small>Warm Glow</small></div><div class="tg"></div></div><div class="srow"><div>Back of house<small>Off</small></div><div class="tg off"></div></div>`,
+rgb:`<h4>Custom color</h4><div class="wheel"><div class="wheel-dial"></div><div class="wheel-pick" style="left:76%;top:32%"></div></div><div class="wheel-preview"><span class="swatch" style="background:#5b8cff"></span><div><div class="big" style="font-size:1rem">Custom color</div><small>#5B8CFF</small></div></div><h4>Brightness</h4><input type="range" min="10" max="100" value="80" oninput="this.style.background='linear-gradient(90deg,#c9ced6 '+this.value+'%,#252b35 '+this.value+'%)'">`};
+const scr=$('#screen'),tabs=$$('.tab');
+function tab(k){tabs.forEach(t=>t.classList.toggle('on',t.dataset.t===k));scr.style.opacity=0;setTimeout(()=>{scr.innerHTML=screens[k];scr.style.opacity=1},180)}
+scr.style.transition='opacity .25s';scr.innerHTML=screens.dim;
+tabs.forEach(t=>t.onclick=()=>tab(t.dataset.t));
+
+
+// side rail highlight
+const rail=$$('.rail a'),ids=rail.map(a=>a.dataset.s);
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){rail.forEach(a=>a.classList.toggle('on',a.dataset.s===e.target.id))}}),{rootMargin:'-45% 0px -50% 0px'});
+ids.forEach(id=>{const el=document.getElementById(id);if(el)so.observe(el)});
+
+// count-up numbers when scrolled into view
+const counters=$$('.no[data-count]');
+const countObs=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  const el=e.target,to=+el.dataset.count,start=performance.now(),dur=700;
+  function step(t){
+    const p=Math.min(1,(t-start)/dur),eased=1-Math.pow(1-p,3),val=Math.round(eased*to);
+    el.textContent=(val<10?'0':'')+val;
+    if(p<1)requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+  countObs.unobserve(el);
+}),{threshold:.6});
+counters.forEach(el=>countObs.observe(el));
+
+// count-up for the hero stat bar (e.g. 16M+ colors)
+const bigCounters=$$('.cu[data-count]');
+const bigObs=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  const el=e.target,to=+el.dataset.count,start=performance.now(),dur=900;
+  function step(t){
+    const p=Math.min(1,(t-start)/dur),eased=1-Math.pow(1-p,3);
+    el.textContent=Math.round(eased*to);
+    if(p<1)requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+  bigObs.unobserve(el);
+}),{threshold:.1});
+bigCounters.forEach(el=>bigObs.observe(el));
+
+// full-screen gallery lightbox
+const lbFigs=$$('.track figure img');
+const lb=$('#lightbox'),lbImg=$('#lbImg'),lbCount=$('#lbCount');let lbI=0;
+function openLB(i){lbI=i;lbImg.src=lbFigs[i].src;lbImg.alt=lbFigs[i].alt;lbCount.textContent=(i+1)+' / '+lbFigs.length;lb.classList.add('open');lb.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}
+function closeLB(){lb.classList.remove('open');lb.setAttribute('aria-hidden','true');document.body.style.overflow=''}
+function stepLB(d){openLB((lbI+d+lbFigs.length)%lbFigs.length)}
+lbFigs.forEach((img,i)=>img.closest('figure').onclick=()=>openLB(i));
+$('#lbClose').onclick=closeLB;
+$('#lbPrev').onclick=()=>stepLB(-1);
+$('#lbNext').onclick=()=>stepLB(1);
+lb.onclick=e=>{if(e.target===lb)closeLB()};
+addEventListener('keydown',e=>{
+  if(!lb.classList.contains('open'))return;
+  if(e.key==='Escape')closeLB();
+  if(e.key==='ArrowLeft')stepLB(-1);
+  if(e.key==='ArrowRight')stepLB(1);
+});
+</script>
+</body>
+</html>
